@@ -4,11 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dinesh Kumar T | AI/ML Engineer</title>
-<meta name="description" content="Dinesh Kumar T, AI/ML Engineer in Chennai. NLP, LLMs and RAG, speech-to-text and voice AI in production.">
+<meta name="description" content="Dinesh Kumar T, AI/ML Engineer in Chennai with 2.5+ years building production NLP, LLM/RAG and speech-to-text systems for contact centres.">
+<meta property="og:type" content="profile">
 <meta property="og:title" content="Dinesh Kumar T | AI/ML Engineer">
-<meta property="og:description" content="NLP, LLMs and RAG, speech-to-text and voice AI in production.">
+<meta property="og:description" content="Production NLP, LLM/RAG and speech-to-text systems for contact centres.">
 <meta property="og:url" content="https://dineshaa24.github.io/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230f766e'/><text x='16' y='22' font-family='Arial' font-size='16' font-weight='700' fill='white' text-anchor='middle'>DK</text></svg>">
+<link rel="canonical" href="https://dineshaa24.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230f766e'/><text x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'>DK</text></svg>">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Dinesh Kumar T","jobTitle":"AI/ML Engineer",
+ "address":{"@type":"PostalAddress","addressLocality":"Chennai","addressCountry":"IN"},
+ "email":"mailto:dineshtamilselvan.24@gmail.com","url":"https://dineshaa24.github.io/",
+ "sameAs":["https://www.linkedin.com/in/dinesh-kumar-tamilselvan","https://github.com/Dineshaa24"],
+ "knowsAbout":["Natural Language Processing","Large Language Models","Retrieval-Augmented Generation","Speech Recognition","FastAPI","AWS"]}
+</script>
 <style>
 :root {
   --bg: #fbfbf9;
@@ -18,6 +27,7 @@
   --line: #e4e6e3;
   --accent: #0f766e;
   --accent-soft: #e6f3f1;
+  --on-accent: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -28,6 +38,7 @@
     --line: #2a3034;
     --accent: #4fc1b3;
     --accent-soft: #16302d;
+    --on-accent: #0b1514;
   }
 }
 * { box-sizing: border-box; }
@@ -40,7 +51,8 @@ body {
 }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
-.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+section[id], div[id] { scroll-margin-top: 72px; }
 
 header.top {
   position: sticky; top: 0; z-index: 5;
@@ -50,32 +62,57 @@ header.top {
 }
 header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
 header.top .name { font-weight: 700; color: var(--text); }
+header.top nav { display: flex; align-items: center; }
 header.top nav a { color: var(--muted); margin-left: 20px; font-size: 15px; }
 header.top nav a:hover { color: var(--text); text-decoration: none; }
+header.top nav a.cv { color: var(--accent); font-weight: 600; }
 
-.hero { padding: 72px 0 48px; }
-.hero h1 { font-size: 40px; line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.02em; }
-.hero .role { font-size: 20px; color: var(--muted); margin: 0 0 24px; }
-.hero p.lead { font-size: 18px; max-width: 640px; margin: 0 0 28px; }
+.hero { padding: 64px 0 40px; }
+.status {
+  display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--accent);
+  background: var(--accent-soft); padding: 4px 12px; border-radius: 999px; margin-bottom: 18px;
+}
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.hero h1 { font-size: 42px; line-height: 1.15; margin: 0 0 10px; letter-spacing: -0.02em; }
+.hero .role { font-size: 20px; color: var(--muted); margin: 0 0 22px; }
+.hero p.lead { font-size: 18px; max-width: 660px; margin: 0 0 28px; }
 .links { display: flex; flex-wrap: wrap; gap: 10px; }
 .btn {
-  display: inline-block; padding: 9px 16px; border-radius: 8px;
+  display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 8px;
   border: 1px solid var(--line); background: var(--surface); color: var(--text); font-size: 15px;
 }
 .btn:hover { border-color: var(--accent); text-decoration: none; }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-@media (prefers-color-scheme: dark) { .btn.primary { color: #0b1514; } }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 600; }
+.btn svg { width: 16px; height: 16px; fill: currentColor; }
+
+.impact {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line);
+  border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin: 8px 0 48px;
+}
+.impact div { background: var(--surface); padding: 18px 18px 16px; }
+.impact b { display: block; font-size: 26px; letter-spacing: -0.01em; }
+.impact span { font-size: 14px; color: var(--muted); line-height: 1.4; display: block; }
 
 section { padding: 40px 0; border-top: 1px solid var(--line); }
-section h2 { font-size: 22px; margin: 0 0 20px; }
+section h2 { font-size: 22px; margin: 0 0 22px; }
+
+.job-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; margin-bottom: 4px; }
+.job-head h3 { margin: 0; font-size: 19px; }
+.job-head .when { color: var(--muted); font-size: 15px; }
+.job .org { color: var(--muted); margin: 0 0 18px; }
+.job h4 { font-size: 15px; margin: 18px 0 6px; color: var(--accent); }
+.job ul { margin: 0; padding-left: 20px; }
+.job li { margin-bottom: 6px; }
 
 .project {
   background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
   padding: 22px 24px; margin-bottom: 18px;
 }
+.project-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .project h3 { margin: 0 0 6px; font-size: 19px; }
+.project .code { font-size: 14px; }
 .project p { margin: 0 0 14px; color: var(--muted); }
-.stats { display: flex; flex-wrap: wrap; gap: 10px 26px; margin: 0 0 14px; padding: 0; list-style: none; }
+.stats { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 0 0 14px; padding: 0; list-style: none; }
 .stats li { font-size: 14px; color: var(--muted); }
 .stats b { display: block; font-size: 20px; color: var(--text); }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -89,24 +126,38 @@ section h2 { font-size: 22px; margin: 0 0 20px; }
 .small-projects a:hover { border-color: var(--accent); text-decoration: none; }
 .small-projects span { display: block; color: var(--muted); font-size: 14px; margin-top: 4px; }
 
-.skills { display: grid; grid-template-columns: 160px 1fr; gap: 10px 20px; margin: 0; }
-.skills dt { font-weight: 600; }
-.skills dd { margin: 0; color: var(--muted); }
+.skills { display: grid; grid-template-columns: 170px 1fr; gap: 14px 20px; margin: 0; }
+.skills dt { font-weight: 600; padding-top: 2px; }
+.skills dd { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.skills dd span { font-size: 14px; padding: 3px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
 
-.focus { padding-left: 20px; margin: 0; }
-.focus li { margin-bottom: 10px; }
+.edu { list-style: none; padding: 0; margin: 0; }
+.edu li { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2px 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.edu li:last-child { border-bottom: 0; }
+.edu .when { color: var(--muted); font-size: 15px; }
 
-footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); }
+.cta {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 28px;
+}
+.cta p { margin: 0 0 18px; }
 
+footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
+
+@media (max-width: 720px) {
+  .impact { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 600px) {
   header.top nav a { margin-left: 14px; font-size: 14px; }
   header.top nav a.hide-sm { display: none; }
-  .hero { padding: 48px 0 32px; }
+  .hero { padding: 40px 0 28px; }
   .hero h1 { font-size: 32px; }
-  .hero .role { font-size: 18px; }
+  .hero .role { font-size: 17px; }
+  .hero p.lead { font-size: 17px; }
+  .impact b { font-size: 22px; }
   .project { padding: 18px; }
-  .skills { grid-template-columns: 1fr; gap: 2px; }
-  .skills dd { margin-bottom: 10px; }
+  .skills { grid-template-columns: 1fr; gap: 6px; }
+  .skills dd { margin-bottom: 12px; }
+  .cta { padding: 20px; }
 }
 </style>
 </head>
@@ -116,9 +167,10 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
   <div class="wrap">
     <a class="name" href="#">Dinesh Kumar T</a>
     <nav>
+      <a href="#experience" class="hide-sm">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills" class="hide-sm">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="Dinesh_Kumar_T_Resume.pdf" class="cv">Resume</a>
     </nav>
   </div>
 </header>
@@ -126,32 +178,73 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
 <main class="wrap">
 
   <div class="hero">
+    <div class="status">Open to AI/ML engineering roles · hybrid preferred</div>
     <h1>Dinesh Kumar T</h1>
-    <p class="role">AI/ML Engineer · Chennai, India</p>
-    <p class="lead">I build NLP, LLM and speech systems that run in production, mostly for voice bots and contact-centre automation: intent models, speech-to-text that keeps up with live calls, and LLM/RAG features served behind FastAPI on AWS.</p>
+    <p class="role">AI/ML Engineer · NLP, LLMs &amp; RAG · Speech-to-Text · Chennai, India</p>
+    <p class="lead">I've spent the last 2.5+ years building AI that runs inside live contact-centre calls: intent models that route callers, speech-to-text that keeps up in real time, and LLM/RAG features served behind FastAPI on AWS. I take models from notebook to a Dockerised API, and I'm the one who debugs them when production disagrees.</p>
     <div class="links">
-      <a class="btn primary" href="mailto:dineshtamilselvan.24@gmail.com">Email me</a>
+      <a class="btn primary" href="Dinesh_Kumar_T_Resume.pdf" download>
+        <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7.25 1h1.5v7.19l2.47-2.47 1.06 1.06L8 11.06 3.72 6.78l1.06-1.06 2.47 2.47V1ZM2 13.5h12V15H2v-1.5Z"/></svg>
+        Download resume
+      </a>
+      <a class="btn" href="mailto:dineshtamilselvan.24@gmail.com">Email</a>
       <a class="btn" href="https://www.linkedin.com/in/dinesh-kumar-tamilselvan">LinkedIn</a>
       <a class="btn" href="https://github.com/Dineshaa24">GitHub</a>
     </div>
   </div>
 
-  <section>
-    <h2>What I work on</h2>
-    <ul class="focus">
-      <li><b>NLP and intent detection.</b> TF-IDF and transformer classifiers, Sentence-BERT embeddings, two-stage (process → intent) routing.</li>
-      <li><b>LLMs and RAG.</b> LangChain, OpenAI and open-source models, vector search on PostgreSQL with pgvector.</li>
-      <li><b>Speech-to-text.</b> Whisper, NVIDIA Parakeet and Vosk on 8 kHz call audio, with VAD and speaker diarization.</li>
-      <li><b>Serving and MLOps.</b> FastAPI, Kafka, Redis, WebSockets, Docker, Kubernetes and GPU inference on AWS.</li>
-    </ul>
-    <p style="color:var(--muted);margin:18px 0 0">I started out in mechanical engineering, moved into data analytics, and have worked on applied AI since 2024.</p>
+  <div class="impact" aria-label="Highlights">
+    <div><b>2.5+ yrs</b><span>production AI for voice bots and contact centres</span></div>
+    <div><b>~15%</b><span>higher intent accuracy after replacing the old NLU</span></div>
+    <div><b>5</b><span>STT engines benchmarked for live and post-call audio</span></div>
+    <div><b>~20%</b><span>faster ETL from MySQL and S3 into Python services</span></div>
+  </div>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-head">
+        <h3>Data Scientist / AI Engineer</h3>
+        <span class="when">Mar 2024 – Present</span>
+      </div>
+      <p class="org">Pulse Telesystems · Chennai</p>
+
+      <h4>NLP and intent classification</h4>
+      <ul>
+        <li>Designed and shipped a two-stage intent classification API (process first, then intent) that replaced the previous NLU and improved intent accuracy by about 15%.</li>
+        <li>Compared TF-IDF, Logistic Regression, KNN and BERT models with weighted F1 and cross-validation before every release, and combined them with rule-based logic where it was more reliable.</li>
+        <li>Used Sentence-BERT embeddings for semantic matching, so new intents could be added without retraining.</li>
+        <li>Lowered memory use and latency by loading per-process models on demand; served predictions with confidence scores through FastAPI and Flask on AWS EC2, Lambda and S3.</li>
+      </ul>
+
+      <h4>LLMs and RAG</h4>
+      <ul>
+        <li>Built LLM and RAG pipelines with LangChain on OpenAI GPT and open-source models, with document embeddings in Amazon Aurora PostgreSQL (pgvector).</li>
+      </ul>
+
+      <h4>Speech-to-text and voice AI</h4>
+      <ul>
+        <li>Built and benchmarked STT pipelines across Whisper, whisper.cpp, NVIDIA Parakeet-TDT, Vosk and Kaldi, comparing accuracy, latency and resource use for real-time and post-call transcription.</li>
+        <li>Designed a streaming architecture with FastAPI, Kafka, Redis and WebSockets, with VAD, FFmpeg preprocessing and speaker diarization, plus GPU inference, concurrency limits and monitoring for stable operation under load.</li>
+        <li>Wrote Python AGI services on Asterisk for DTMF handling, call routing and IVR flows used by live voice bots, and traced SIP signalling to find root causes of production call issues.</li>
+      </ul>
+
+      <h4>Data engineering and analytics</h4>
+      <ul>
+        <li>Built ETL pipelines from MySQL and S3 that cut processing time by about 20%, and Power BI dashboards that helped operations improve efficiency by about 10%.</li>
+      </ul>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Open-source projects</h2>
+    <p style="color:var(--muted);margin:-8px 0 22px">Each one is tested, runs in Docker, and reports measured results in its README.</p>
 
     <article class="project">
-      <h3><a href="https://github.com/Dineshaa24/realtime-stt-pipeline">realtime-stt-pipeline</a></h3>
+      <div class="project-head">
+        <h3><a href="https://github.com/Dineshaa24/realtime-stt-pipeline">realtime-stt-pipeline</a></h3>
+        <a class="code" href="https://github.com/Dineshaa24/realtime-stt-pipeline">View code →</a>
+      </div>
       <p>Streaming speech-to-text over WebSockets. A WebRTC VAD cuts the audio into utterances and faster-whisper transcribes each one as soon as the speaker stops. Handles 8 kHz phone audio as well as 16 kHz.</p>
       <ul class="stats">
         <li><b>8.9%</b>WER, clean audio</li>
@@ -162,7 +255,10 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
     </article>
 
     <article class="project">
-      <h3><a href="https://github.com/Dineshaa24/rag-pgvector-qa">rag-pgvector-qa</a></h3>
+      <div class="project-head">
+        <h3><a href="https://github.com/Dineshaa24/rag-pgvector-qa">rag-pgvector-qa</a></h3>
+        <a class="code" href="https://github.com/Dineshaa24/rag-pgvector-qa">View code →</a>
+      </div>
       <p>Document Q&amp;A with citations on PostgreSQL and pgvector. Local ONNX embeddings, vector, keyword and hybrid retrieval compared on a SQuAD benchmark, and answers from any OpenAI-compatible LLM.</p>
       <ul class="stats">
         <li><b>87.5%</b>Recall@5, vector search</li>
@@ -173,7 +269,10 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
     </article>
 
     <article class="project">
-      <h3><a href="https://github.com/Dineshaa24/intent-classifier-api">intent-classifier-api</a></h3>
+      <div class="project-head">
+        <h3><a href="https://github.com/Dineshaa24/intent-classifier-api">intent-classifier-api</a></h3>
+        <a class="code" href="https://github.com/Dineshaa24/intent-classifier-api">View code →</a>
+      </div>
       <p>Two-stage intent classification: first the domain, then the intent within it, with a tuned threshold to flag out-of-scope requests. Trained on CLINC150 (150 intents) and served with FastAPI.</p>
       <ul class="stats">
         <li><b>92.6%</b>in-scope accuracy</li>
@@ -194,29 +293,40 @@ footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; border-top:
   <section id="skills">
     <h2>Skills</h2>
     <dl class="skills">
-      <dt>Languages</dt><dd>Python, SQL</dd>
-      <dt>ML / DL</dt><dd>PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers</dd>
-      <dt>GenAI</dt><dd>LangChain, RAG, prompt engineering, pgvector</dd>
-      <dt>Speech</dt><dd>Whisper, NVIDIA Parakeet, Vosk, VAD, diarization</dd>
-      <dt>Backend</dt><dd>FastAPI, Flask, REST, WebSockets, Kafka, Redis</dd>
-      <dt>Infra</dt><dd>Docker, Kubernetes, AWS (EC2, Lambda, S3, Aurora PostgreSQL)</dd>
-      <dt>Data</dt><dd>Pandas, NumPy, MySQL, PostgreSQL, Power BI</dd>
+      <dt>ML / Deep Learning</dt><dd><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>Hugging Face</span><span>BERT</span><span>Sentence-BERT</span></dd>
+      <dt>LLMs &amp; GenAI</dt><dd><span>OpenAI GPT</span><span>Open-source LLMs</span><span>LangChain</span><span>RAG</span><span>pgvector</span><span>Prompt engineering</span></dd>
+      <dt>Speech &amp; Voice</dt><dd><span>Whisper</span><span>NVIDIA Parakeet</span><span>Vosk</span><span>Kaldi</span><span>VAD</span><span>Diarization</span><span>Asterisk / SIP</span></dd>
+      <dt>Backend &amp; MLOps</dt><dd><span>Python</span><span>FastAPI</span><span>Flask</span><span>WebSockets</span><span>Kafka</span><span>Redis</span><span>Docker</span><span>Kubernetes</span></dd>
+      <dt>Cloud &amp; Data</dt><dd><span>AWS EC2 / Lambda / S3</span><span>Aurora PostgreSQL</span><span>MySQL</span><span>SQL</span><span>Pandas</span><span>Power BI</span></dd>
     </dl>
   </section>
 
+  <section id="education">
+    <h2>Education &amp; certifications</h2>
+    <ul class="edu">
+      <li><span><b>PG Program in Data Science &amp; Analytics</b> · Imarticus Learning, Chennai</span><span class="when">2023 – 2024</span></li>
+      <li><span><b>B.E. Mechanical Engineering</b> · Anna University, Chennai</span><span class="when">2014 – 2018</span></li>
+      <li><span><b>Python for Data Science and Machine Learning Bootcamp</b> · Udemy</span></li>
+      <li><span><b>HackerRank certificates</b> · Python, SQL, Problem Solving</span></li>
+    </ul>
+  </section>
+
   <section id="contact">
-    <h2>Contact</h2>
-    <p style="margin:0 0 18px">Open to AI/ML engineering roles, hybrid or on-site, in Chennai or elsewhere. The quickest way to reach me is email.</p>
-    <div class="links">
-      <a class="btn primary" href="mailto:dineshtamilselvan.24@gmail.com">dineshtamilselvan.24@gmail.com</a>
-      <a class="btn" href="https://www.linkedin.com/in/dinesh-kumar-tamilselvan">LinkedIn</a>
+    <div class="cta">
+      <h2 style="margin-bottom:10px">Let's talk</h2>
+      <p>I'm looking for AI/ML engineering roles in NLP, LLMs or speech, hybrid or on-site, in Chennai or open to relocating. Email is the fastest way to reach me.</p>
+      <div class="links">
+        <a class="btn primary" href="mailto:dineshtamilselvan.24@gmail.com">dineshtamilselvan.24@gmail.com</a>
+        <a class="btn" href="Dinesh_Kumar_T_Resume.pdf" download>Resume (PDF)</a>
+        <a class="btn" href="https://www.linkedin.com/in/dinesh-kumar-tamilselvan">LinkedIn</a>
+      </div>
     </div>
   </section>
 
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Dinesh Kumar T · <a href="https://github.com/Dineshaa24/Dineshaa24.github.io">Source</a></div>
+  <div class="wrap">© 2026 Dinesh Kumar T · <a href="https://github.com/Dineshaa24/Dineshaa24.github.io">Site source</a></div>
 </footer>
 
 </body>
